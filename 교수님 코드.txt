@@ -1,0 +1,45 @@
+	/* 영상처리 */
+	/*Translation*/
+	/*int Tx = 30, Ty = 20;
+	for (int i = 0; i < H; i++) {
+		for (int j = 0; j < W; j++) {
+			if(i+Ty>=0 && i+Ty<H && j+Tx >=0 && j+Tx < W)
+				Output[(i+Ty)*W + j+Tx] = Image[i*W + j];
+		}
+	}*/
+	/*Translation*/
+	/*Rotation*/
+	/*int angle = 45;
+	double Theta = angle * 3.141592 / 180.0;
+	int Cx = 50, Cy = 50;
+	int TmpX, TmpY;
+	for (int i = 0; i < H; i++) {
+		for (int j = 0; j < W; j++) {
+			TmpX = cos(Theta)*(j-Cx) + sin(Theta)*(i-Cy) + Cx;
+			TmpY = -sin(Theta)*(j-Cx) + cos(Theta)*(i-Cy) + Cy;
+			if (TmpY >= 0 && TmpY<H && TmpX >= 0 && TmpX < W)
+				Output[i*W + j] = Image[TmpY*W + TmpX];
+		}
+	}*/
+	/*Rotation*/
+
+	/* Shearing */
+	/*double Shx = 0, Shy = 0.3;
+	int TmpX, TmpY;
+	for (int i = 0; i < H; i++) {
+		for (int j = 0; j < W; j++) {
+			TmpX = j + Shx*i;
+			TmpY = Shy*j + i;
+			if (TmpY >= 0 && TmpY<H && TmpX >= 0 && TmpX < W)
+				Output[TmpY*W + TmpX] = Image[i*W + j];
+		}
+	}*/
+	/* Shearing */
+
+/*	for (int i = 0; i < H / 2; i++) {
+		for (int j = 0; j < W; j++) {
+			swap(&Output[i*W + j], &Output[(H - i - 1)*W + j]);
+		}
+	}
+
+*/
